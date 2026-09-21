@@ -1,0 +1,19 @@
+.note-box {
+  border-bottom: 1px solid var(--border-light);
+  padding: 15px 0;
+}
+
+.note-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.scent-experience p {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+}

@@ -1,0 +1,192 @@
+.checkout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  min-height: 80vh;
+}
+
+.checkout-title {
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* ========== STEP INDICATOR ========== */
+.checkout-steps {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.step.active { opacity: 1; }
+.step.completed { opacity: 0.8; }
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #666;
+}
+
+.step.active .step-number {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+.step.completed .step-number {
+  background: var(--accent-gold);
+  color: white;
+  border-color: var(--accent-gold);
+}
+
+.step-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+/* ========== PAYMENT OPTIONS ========== */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 12px;
+}
+
+.payment-option:hover {
+  border-color: #333;
+  background: #f9f9f9;
+}
+
+.payment-option input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  accent-color: #333;
+}
+
+.payment-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.payment-option-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.payment-option-description {
+  font-size: 12px;
+  color: #999;
+}
+
+/* ========== QR CODE PAYMENT ========== */
+.qr-payment-container {
+  background: white;
+  padding: 40px;
+  border: 1px solid #f0f0f0;
+}
+
+.qr-section {
+  text-align: center;
+  padding: 30px;
+  background: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.qr-code-box {
+  display: inline-block;
+  padding: 15px;
+  background: white;
+  border: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.qr-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.timer-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Courier New', monospace;
+}
+
+.bank-info-section {
+  background: #f9f9f9;
+  padding: 25px;
+  border: 1px solid #eaeaea;
+}
+
+.bank-info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+.amount {
+  font-weight: 600;
+  color: #8b0000;
+}
+
+.bank-info-note {
+  background: #fff3cd;
+  border-left: 3px solid #ffc107;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #856404;
+}
+
+.checkout-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.checkout-actions .btn, .checkout-actions form {
+  flex: 1;
+}
+
+.checkout-actions button {
+  width: 100%;
+}
